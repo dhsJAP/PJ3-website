@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kỷ niệm của Bảo với ae</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kỷ niệm của tôi và ae</h1>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery"></section>
+
+    <section id="timeline-section">
+      <h2>Timeline Kỷ niệm</h2>
+      <ul id="timeline" class="timeline"></ul>
+    </section>
+
+    <section id="add-memory">
+      <h2>Thêm ảnh & kỷ niệm mới</h2>
+      <form id="memoryForm">
+        <label for="date">Ngày kỷ niệm:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="imgFile">Chọn ảnh từ máy tính:</label>
+        <input type="file" id="imgFile" name="imgFile" accept="image/*" required />
+
+        <label for="description">Mô tả kỷ niệm:</label>
+        <textarea id="description" name="description" rows="3" placeholder="Viết kỷ niệm ở đây..." required></textarea>
+
+        <button type="submit">Thêm vào bộ sưu tập</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
